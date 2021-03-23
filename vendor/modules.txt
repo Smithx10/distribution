@@ -84,8 +84,7 @@ github.com/denverdino/aliyungo/cdn/auth
 github.com/denverdino/aliyungo/common
 github.com/denverdino/aliyungo/oss
 github.com/denverdino/aliyungo/util
-# github.com/dgrijalva/jwt-go v0.0.0-20170104182250-a601269ab70c
-## explicit
+# github.com/dgrijalva/jwt-go v3.2.0+incompatible
 github.com/dgrijalva/jwt-go
 # github.com/dnaeon/go-vcr v1.0.1
 ## explicit
@@ -102,6 +101,10 @@ github.com/docker/libtrust
 github.com/felixge/httpsnoop
 # github.com/golang/protobuf v1.3.2
 github.com/golang/protobuf/proto
+github.com/golang/protobuf/ptypes
+github.com/golang/protobuf/ptypes/any
+github.com/golang/protobuf/ptypes/duration
+github.com/golang/protobuf/ptypes/timestamp
 # github.com/gomodule/redigo v1.8.2
 ## explicit
 github.com/gomodule/redigo/redis
@@ -116,10 +119,21 @@ github.com/gorilla/mux
 github.com/inconshreveable/mousetrap
 # github.com/jmespath/go-jmespath v0.3.0
 github.com/jmespath/go-jmespath
+# github.com/joyent/triton-go/v2 v2.0.0-pre3
+## explicit
+github.com/joyent/triton-go/v2
+github.com/joyent/triton-go/v2/authentication
+github.com/joyent/triton-go/v2/client
+github.com/joyent/triton-go/v2/errors
+github.com/joyent/triton-go/v2/storage
+github.com/joyent/triton-go/v2/utils
 # github.com/konsorten/go-windows-terminal-sequences v1.0.3
 github.com/konsorten/go-windows-terminal-sequences
 # github.com/kr/pretty v0.1.0
 ## explicit
+github.com/kr/pretty
+# github.com/kr/text v0.1.0
+github.com/kr/text
 # github.com/marstr/guid v1.1.0
 ## explicit
 github.com/marstr/guid
@@ -141,6 +155,8 @@ github.com/opencontainers/go-digest
 ## explicit
 github.com/opencontainers/image-spec/specs-go
 github.com/opencontainers/image-spec/specs-go/v1
+# github.com/pkg/errors v0.9.1
+github.com/pkg/errors
 # github.com/prometheus/client_golang v1.1.0
 github.com/prometheus/client_golang/prometheus
 github.com/prometheus/client_golang/prometheus/internal
@@ -160,7 +176,7 @@ github.com/satori/go.uuid
 # github.com/sirupsen/logrus v1.6.0
 ## explicit
 github.com/sirupsen/logrus
-# github.com/spf13/cobra v0.0.3
+# github.com/spf13/cobra v0.0.5
 ## explicit
 github.com/spf13/cobra
 # github.com/spf13/pflag v1.0.3
@@ -181,6 +197,14 @@ golang.org/x/crypto/acme
 golang.org/x/crypto/acme/autocert
 golang.org/x/crypto/bcrypt
 golang.org/x/crypto/blowfish
+golang.org/x/crypto/chacha20
+golang.org/x/crypto/curve25519
+golang.org/x/crypto/ed25519
+golang.org/x/crypto/ed25519/internal/edwards25519
+golang.org/x/crypto/internal/subtle
+golang.org/x/crypto/poly1305
+golang.org/x/crypto/ssh
+golang.org/x/crypto/ssh/agent
 # golang.org/x/net v0.0.0-20200202094626-16171245cfb2
 golang.org/x/net/context
 golang.org/x/net/context/ctxhttp
@@ -197,10 +221,12 @@ golang.org/x/oauth2/google
 golang.org/x/oauth2/internal
 golang.org/x/oauth2/jws
 golang.org/x/oauth2/jwt
-# golang.org/x/sys v0.0.0-20190801041406-cbf593c0f2f3
+# golang.org/x/sys v0.0.0-20200501145240-bc7a7d42d5c3
+golang.org/x/sys/cpu
+golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
 golang.org/x/sys/windows
-# golang.org/x/text v0.3.0
+# golang.org/x/text v0.3.2
 golang.org/x/text/secure/bidirule
 golang.org/x/text/transform
 golang.org/x/text/unicode/bidi
@@ -228,18 +254,42 @@ google.golang.org/cloud
 google.golang.org/cloud/internal
 google.golang.org/cloud/internal/opts
 google.golang.org/cloud/storage
-# google.golang.org/grpc v0.0.0-20160317175043-d3ddb4469d5a
-## explicit
+# google.golang.org/genproto v0.0.0-20180817151627-c66870c02cf8
+google.golang.org/genproto/googleapis/rpc/status
+# google.golang.org/grpc v1.21.0
 google.golang.org/grpc
+google.golang.org/grpc/balancer
+google.golang.org/grpc/balancer/base
+google.golang.org/grpc/balancer/roundrobin
+google.golang.org/grpc/binarylog/grpc_binarylog_v1
 google.golang.org/grpc/codes
+google.golang.org/grpc/connectivity
 google.golang.org/grpc/credentials
+google.golang.org/grpc/credentials/internal
+google.golang.org/grpc/encoding
+google.golang.org/grpc/encoding/proto
 google.golang.org/grpc/grpclog
 google.golang.org/grpc/internal
+google.golang.org/grpc/internal/backoff
+google.golang.org/grpc/internal/balancerload
+google.golang.org/grpc/internal/binarylog
+google.golang.org/grpc/internal/channelz
+google.golang.org/grpc/internal/envconfig
+google.golang.org/grpc/internal/grpcrand
+google.golang.org/grpc/internal/grpcsync
+google.golang.org/grpc/internal/syscall
+google.golang.org/grpc/internal/transport
+google.golang.org/grpc/keepalive
 google.golang.org/grpc/metadata
 google.golang.org/grpc/naming
 google.golang.org/grpc/peer
-google.golang.org/grpc/transport
-# gopkg.in/check.v1 v1.0.0-20141024133853-64131543e789
+google.golang.org/grpc/resolver
+google.golang.org/grpc/resolver/dns
+google.golang.org/grpc/resolver/passthrough
+google.golang.org/grpc/stats
+google.golang.org/grpc/status
+google.golang.org/grpc/tap
+# gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127
 ## explicit
 gopkg.in/check.v1
 # gopkg.in/yaml.v2 v2.2.2
