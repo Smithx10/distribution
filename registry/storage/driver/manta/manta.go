@@ -24,7 +24,7 @@ const (
 type driver struct{}
 
 type driverParameters struct {
-	path   string `json:"displayName"`
+	path   string
 	client *storage.StorageClient
 }
 
@@ -119,7 +119,7 @@ func newMantaClient() (*storage.StorageClient, error) {
 	return client, nil
 }
 
-func New(params driverParameters) (storagedriver.StorageDriver, error) {
+func New(params driverParameters) (*Driver, error) {
 
 	d := &driver{}
 
